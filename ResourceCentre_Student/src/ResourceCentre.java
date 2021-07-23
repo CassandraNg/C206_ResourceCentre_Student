@@ -252,7 +252,7 @@ public class ResourceCentre {
 		boolean isReturned = false;
 		// write your code here
 
-boolean isLoaned = false;
+		boolean isLoaned = false;
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
@@ -261,7 +261,7 @@ boolean isLoaned = false;
 				System.out.println("availability before i - " + i + chromebookList.get(i).getIsAvailable());
 				
 				chromebookList.get(i).setIsAvailable(false);
-				chromebookList.get(i).setDueDate(dueDate);
+				chromebookList.get(i).setDueDate("");
 				
 				System.out.println("availability aft " + chromebookList.get(i).getIsAvailable());
 				
