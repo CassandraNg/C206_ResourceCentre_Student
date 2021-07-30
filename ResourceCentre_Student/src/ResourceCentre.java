@@ -248,20 +248,20 @@ public class ResourceCentre {
 		}
 	}
 
-	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag){
+	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String DueDate){
 		boolean isReturned = false;
 		// write your code here
 
 		boolean isLoaned = false;
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
+			if (DueDate.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
 					&& chromebookList.get(i).getIsAvailable() == true) {
 				
 				System.out.println("availability before i - " + i + chromebookList.get(i).getIsAvailable());
 				
 				chromebookList.get(i).setIsAvailable(false);
-				chromebookList.get(i).setDueDate("");
+				chromebookList.get(i).setDueDate(DueDate);
 				
 				System.out.println("availability aft " + chromebookList.get(i).getIsAvailable());
 				
