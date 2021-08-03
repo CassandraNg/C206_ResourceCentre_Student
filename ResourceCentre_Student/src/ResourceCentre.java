@@ -265,7 +265,6 @@ public class ResourceCentre {
 				
 				System.out.println("availability aft " + chromebookList.get(i).getIsAvailable());
 				
-				isLoaned = true;
 				
 			}
 		}
